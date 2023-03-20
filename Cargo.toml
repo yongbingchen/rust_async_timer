@@ -1,0 +1,13 @@
+[package]
+name = "async_sw_timer"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.63"
+
+[dependencies]
+tokio = { version = "1.25.0", features = ["full"] }
+futures = "0.3"
+rand = "0.8.5"
+
+[profile.test]
+opt-level = 3
